@@ -69,7 +69,7 @@ export default function Home() {
 
       {/* 💫 About Section */}
   <section className="py-24 px-6 max-w-5xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-6">
+        <h2 className="text-3xl md:text-4xl text-white font-semibold mb-6">
           The Story Behind <span className="text-[#E31E25]">DesignUru</span>
         </h2>
         <p className="text-gray-400 text-lg leading-relaxed max-w-3xl mx-auto">
@@ -94,7 +94,7 @@ export default function Home() {
         <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
           {/* Example Project 1 */}
           <div className="bg-[#0A0A0A] rounded-2xl border border-gray-800 p-8 hover:scale-[1.02] transition-transform">
-            <h3 className="text-2xl font-semibold mb-3">SaaS Dashboard Redesign</h3>
+            <h3 className="text-2xl font-semibold mb-3 text-white">SaaS Dashboard Redesign</h3>
             <p className="text-gray-400 mb-4">
               A complete redesign for a startup’s analytics platform — improving UX flow, visual clarity, and performance.
             </p>
@@ -102,7 +102,7 @@ export default function Home() {
           </div>
           {/* Example Project 2 */}
           <div className="bg-[#0A0A0A] rounded-2xl border border-gray-800 p-8 hover:scale-[1.02] transition-transform">
-            <h3 className="text-2xl font-semibold mb-3">Brand Identity for Dinerly</h3>
+            <h3 className="text-2xl font-semibold mb-3 text-white">Brand Identity for Dinerly</h3>
             <p className="text-gray-400 mb-4">
               Created a bold, warm identity and website for a fast-growing food tech brand.
             </p>
@@ -113,7 +113,7 @@ export default function Home() {
 
 {/* 🧩 SERVICES */}
       <section className="py-24 px-6 text-center">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-6">What We Do Best</h2>
+        <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-white">What We Do Best</h2>
         <p className="text-gray-400 max-w-3xl mx-auto mb-12">
           From concept to launch, we help brands craft interfaces and identities that matter.
         </p>

@@ -1,28 +1,45 @@
-import "./globals.css"
-import { Inter, Space_Grotesk } from "next/font/google";
+import "./globals.css";
+import { Poppins, Playfair_Display } from "next/font/google";
+import { Navbar } from "@/components/ui/navbar";
+import type { Metadata } from "next";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const grotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-grotesk" });
+// 🧠 Font Setup
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
+  variable: "--font-poppins",
+});
 
-import type { Metadata } from "next"
-import { Navbar } from "@/components//ui/navbar"
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-playfair",
+});
 
+// 🧾 Metadata
 export const metadata: Metadata = {
   title: "DesignUru Studio",
-  description: "Minimal. Bold. Creative — DesignUru Studio builds beautiful digital experiences.",
-}
+  description:
+    "Minimal. Bold. Creative — DesignUru Studio crafts digital experiences that blend art and strategy.",
+};
 
+// 🌍 Root Layout
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-<html lang="en" className={`${inter.variable} ${grotesk.variable}`}>
-      <body className={`${inter.className} bg-white text-gray-900`}>
-        <Navbar/>
+    <html
+      lang="en"
+      className={`${poppins.variable} ${playfair.variable}`}
+    >
+      <body
+        className={`bg-black text-gray-100 ${poppins.className} antialiased`}
+      >
+        <Navbar />
         <main className="min-h-screen">{children}</main>
       </body>
     </html>
-  )
+  );
 }

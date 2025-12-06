@@ -187,6 +187,9 @@ export default function AboutPage() {
         </div>
       </motion.section>
 
+      {/* <div className="text-center items-center justify-center"> -------------------------------------------------------------------------- </div> */}
+
+
       {/* CTA */}
       <motion.section
         variants={fadeIn}
