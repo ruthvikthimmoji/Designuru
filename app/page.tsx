@@ -2,6 +2,7 @@
 
 import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
+import { Link } from "lucide-react";
 
 // ✅ Load Spline dynamically (no SSR issues)
 const Spline = dynamic(() => import("@splinetool/react-spline"), {
@@ -13,17 +14,8 @@ export default function Home() {
 <main className="relative min-h-screen text-white overflow-hidden">
       {/* 🌌 Hero Section */}
       <section className="relative h-screen flex flex-col items-left justify-center text-center px-6">
-        {/* 🎞️ Spline Background */}
-        <div className="absolute inset-0 -z-10">
-          <Spline
-            scene="https://prod.spline.design/UVrPW5hmrlnVt2t0/scene.splinecode"
-            className="w-screen h-full"
-          />
-          {/* Overlay for contrast */}
-          <div className="absolute inset-0 bg-black/40 backdrop-blur-[1px]" />
-        </div>
          {/* 🏠 HERO SECTION */}
-      <section className="h-screen flex flex-col items-left justify-center text-left
+      <section className="h-screen flex flex-col items-center justify-center text-left
        px-6">
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
@@ -49,15 +41,15 @@ export default function Home() {
           transition={{ duration: 1.2, delay: 0.6 }}
           className="flex gap-4 mt-8"
         >
-          <a
+          {/* <Link
             href="/work"
             className="bg-[#E31E25] text-white px-6 py-3 rounded-full font-medium hover:scale-105 transition-transform"
           >
             View Our Work
-          </a>
+          </Link> */}
           <a
             href="/contact"
-            className="border border-[#E31E25] text-[#E31E25] px-6 py-3 rounded-full font-medium hover:bg-[#E31E25] hover:text-white transition-all"
+            className="border border-[#E31E25] text-[#E31E25] items-center justify-center px-6 py-3 rounded-full font-medium hover:bg-[#E31E25] hover:text-white transition-all"
           >
             Let’s Collaborate
           </a>
@@ -65,10 +57,18 @@ export default function Home() {
   </section>
   </section>
 
+  <section>
+  <div className="relative flex items-center justify-center bg-[#0A0A0A] text-white h-screen overflow-hidden">
+        <div className="text-4xl font-semibold z-10 animate-pulse">
+        Coming soon...
+      </div>
+    </div>
+  </section>
+
 
 
       {/* 💫 About Section */}
-  <section className="py-24 px-6 max-w-5xl mx-auto text-center">
+  {/* <section className="py-24 px-6 max-w-5xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl text-white font-semibold mb-6">
           The Story Behind <span className="text-[#E31E25]">DesignUru</span>
         </h2>
@@ -83,25 +83,25 @@ export default function Home() {
             </span>
           ))}
         </div>
-      </section>
+      </section> */}
 
 
 {/* 🧱 FEATURED WORK */}
-      <section className="py-24 bg-[#111111] px-6 text-center">
+      {/* <section className="py-24 bg-[#111111] px-6 text-center">
         <h2 className="text-3xl md:text-4xl font-semibold mb-10 text-white">
           Work That Speaks Louder Than Words.
         </h2>
         <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
-          {/* Example Project 1 */}
-          <div className="bg-[#0A0A0A] rounded-2xl border border-gray-800 p-8 hover:scale-[1.02] transition-transform">
+          Example Project 1 */}
+          {/* <div className="bg-[#0A0A0A] rounded-2xl border border-gray-800 p-8 hover:scale-[1.02] transition-transform">
             <h3 className="text-2xl font-semibold mb-3 text-white">SaaS Dashboard Redesign</h3>
             <p className="text-gray-400 mb-4">
               A complete redesign for a startup’s analytics platform — improving UX flow, visual clarity, and performance.
             </p>
             <a href="#" className="text-[#E31E25] font-medium">View Case Study →</a>
-          </div>
+          </div> */}
           {/* Example Project 2 */}
-          <div className="bg-[#0A0A0A] rounded-2xl border border-gray-800 p-8 hover:scale-[1.02] transition-transform">
+          {/* <div className="bg-[#0A0A0A] rounded-2xl border border-gray-800 p-8 hover:scale-[1.02] transition-transform">
             <h3 className="text-2xl font-semibold mb-3 text-white">Brand Identity for Dinerly</h3>
             <p className="text-gray-400 mb-4">
               Created a bold, warm identity and website for a fast-growing food tech brand.
@@ -109,10 +109,10 @@ export default function Home() {
             <a href="#" className="text-[#E31E25] font-medium">View Project →</a>
           </div>
         </div>
-      </section>
+      </section> */}
 
 {/* 🧩 SERVICES */}
-      <section className="py-24 px-6 text-center">
+      {/* <section className="py-24 px-6 text-center">
         <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-white">What We Do Best</h2>
         <p className="text-gray-400 max-w-3xl mx-auto mb-12">
           From concept to launch, we help brands craft interfaces and identities that matter.
@@ -130,10 +130,10 @@ export default function Home() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
      {/* 🪩 CONTACT CTA */}
-      <section className="py-32 text-center bg-[#0A0A0A] border-t border-gray-800">
+      {/* <section className="py-32 text-center bg-[#0A0A0A] border-t border-gray-800">
         <h2 className="text-4xl md:text-5xl font-semibold mb-6 text-white">Let’s Create Something Extraordinary</h2>
         <p className="text-gray-400 mb-8">
           Have an idea, product, or brand to build? We’d love to bring it to life.
@@ -144,12 +144,12 @@ export default function Home() {
         >
           Start a Project
         </a>
-      </section>
+      </section> */}
 
       {/* ⚡ Footer */}
-      <footer className="bg-black py-8 text-center text-gray-400 text-sm">
+      {/* <footer className="bg-black py-8 text-center text-gray-400 text-sm">
         © {new Date().getFullYear()} DesignUru Studios. All rights reserved.
-      </footer>
+      </footer> */}
     </main>
   );
 }
